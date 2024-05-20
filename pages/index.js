@@ -23,7 +23,7 @@ export default function Home() {
         </h1>
       </section>
 
-      <section id="products" className="grid grid-cols-1 px-24 sm:grid-cols-2 lg:grid-cols-4 gap-6 bg-gradient-to-r from-black to-neutral-700 pt-6 pb-3">
+      <section id="products" className="grid grid-cols-1 px-8 sm:grid-cols-2 lg:grid-cols-4 gap-6 bg-gradient-to-r from-black to-neutral-700 pt-6 pb-3">
         <h2 className='text-white text-center text-2xl font-bold mb-'>Products</h2>
           <Card />
           <Card />

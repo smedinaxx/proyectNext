@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <div style={{ width: '100%', maxWidth: '100vw',}}>
       <Image
-        src="/bspace.jpg"
+        src="/setupBanner.webp"
         width={500}
         height={500}
         alt="Picture of the author"
@@ -15,3 +15,4 @@ export default function Page() {
     </div>
   );
 }
+

@@ -49,23 +49,23 @@ function NavBar() {
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                 <li className="pb-3 text-base text-neutral-400 py-2 md:px-6 text-center border-b md:border-b-0  hover:text-white  border-lime-700  md:hover:text-white  md:hover:bg-transparent">
-                  <Link href="#about" onClick={() => setNavbar(!navbar)}>
-                    Transmision online
+                  <Link href="#setup" onClick={() => setNavbar(!navbar)}>
+                    SETUP
                   </Link>
                 </li>
                 <li className="pb-3 text-base text-neutral-400 py-2 px-6 text-center  border-b md:border-b-0  hover:text-white border-lime-700  md:hover:text-white md:hover:bg-transparent">
+                  <Link href="#products" onClick={() => setNavbar(!navbar)}>
+                    PRODUCTS
+                  </Link>
+                </li>
+                <li className="pb-3 text-base text-neutral-400 py-2 px-6 text-center  border-b md:border-b-0  hover:text-white  border-lime-700  md:hover:text-white md:hover:bg-transparent top-0">
+                  <Link href="#newproducts" onClick={() => setNavbar(!navbar)}>
+                    NEW PRODUCTS
+                  </Link>
+                </li>
+                <li className="pb-3 text-base text-neutral-400 py-2 px-6 text-center  border-b md:border-b-0  hover:text-white  border-lime-700  md:hover:text-white md:hover:bg-transparent">
                   <Link href="#contact" onClick={() => setNavbar(!navbar)}>
-                    Galeria
-                  </Link>
-                </li>
-                <li className="pb-3 text-base text-neutral-400 py-2 px-6 text-center  border-b md:border-b-0  hover:text-white  border-lime-700  md:hover:text-white md:hover:bg-transparent">
-                  <Link href="#blog" onClick={() => setNavbar(!navbar)}>
-                    Clases armamento
-                  </Link>
-                </li>
-                <li className="pb-3 text-base text-neutral-400 py-2 px-6 text-center  border-b md:border-b-0  hover:text-white  border-lime-700  md:hover:text-white md:hover:bg-transparent">
-                  <Link href="#projects" onClick={() => setNavbar(!navbar)}>
-                    Redes sociales
+                    CONTACT US
                   </Link>
                 </li>
               </ul>

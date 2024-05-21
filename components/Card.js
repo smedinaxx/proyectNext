@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Button from './Button';
 
 export default function Card() {
   return (
@@ -12,11 +11,11 @@ export default function Card() {
           height={500}
           alt='Picture of the author'
           layout='responsive'
-          className='grayscale hover:grayscale-0 hover:scale-105'
+          className='hover:scale-105 transition duration-500 ease-in-out'
         />
       </div>
       <div className='text-container bg-neutral-300 hover:bg-white text-black p-2'>
-        <h1 className='font-bold flex justify-center'>Monitor BenQ Mobuiz 25inches</h1>
+        <h1 className='font-bold flex justify-center'>Monitor BenQ Mobiuz 25inches</h1>
         <ul>
           <li>Resolucion: Full HD</li>
           <li>Panel: IPS</li>

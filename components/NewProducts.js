@@ -6,12 +6,11 @@ export default function Page() {
     <div style={{ position: 'relative', width: '100%', height: '60vh', maxWidth: '100vw' }}>
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
         <Image
-          src="/setupBanner.webp"
+          src="/newProducts.jpg"
           layout="fill"
           objectFit="cover"
           objectPosition="center"
           alt="Picture of the author"
-          className='opacity-50'
         />
       </div>
     </div>

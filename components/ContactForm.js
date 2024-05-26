@@ -26,10 +26,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="lg:w-3/4 mx-auto bg-black shadow-md rounded px-8 pt-6 pb-8 mb-4 border border-lime-900">
+    <div className="lg:w-3/4 mx-auto bg-black drop-shadow-2xl rounded px-8 pt-6 pb-8 mb-4 border border-lime-900">
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label className="block text-lime-600 text-sm font-bold mb-2" htmlFor="name">
+          <label className="block text-lime-600 text-sm font-semibold mb-2" htmlFor="name">
             Full Name
           </label>
           <input
@@ -43,7 +43,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-lime-600 text-sm font-bold mb-2" htmlFor="email">
+          <label className="block text-lime-600 text-sm font-semibold mb-2" htmlFor="email">
             Email
           </label>
           <input
@@ -57,7 +57,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-lime-600 text-sm font-bold mb-2" htmlFor="subject">
+          <label className="block text-lime-600 text-sm font-semibold mb-2" htmlFor="subject">
             Subject
           </label>
           <input
@@ -71,7 +71,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-lime-600 text-sm font-bold mb-2" htmlFor="description">
+          <label className="block text-lime-600 text-sm font-semibold mb-2" htmlFor="description">
             Description
           </label>
           <textarea
@@ -86,7 +86,7 @@ const ContactForm = () => {
         <div className="flex items-center justify-between">
           <button
              type="submit"
-             className='text-white text-sm border border-purple-500 bg-black hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 py-2 rounded-xl mt-2 px-8'>
+             className='text-white text-sm border border-purple-500 bg-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 py-2 rounded-xl mt-2 px-8 w-full'>
             Send
           </button>
           

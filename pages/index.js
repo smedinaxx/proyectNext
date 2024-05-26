@@ -13,11 +13,10 @@ export default function Home() {
     <div>
       <div className='mt-16'>
       </div>
-
       <NavBar />
       <section
         id="setup"
-        className="bg-black text-center flex relative mt-16">
+        className="bg-black text-center flex relative mt-18">
         <Banner></Banner>
         <div className='w-full absolute z-10 top-1/4 md:top-1/3 lg:top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
           <h1 className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold mb-2'>ALL THE BEST COMPONENTS</h1>
@@ -40,7 +39,6 @@ export default function Home() {
         <Card />
         <Card />
 
-
       </section>
       <section
         id="newproducts"
@@ -48,7 +46,7 @@ export default function Home() {
         <NewProducts></NewProducts>
       </section>
 
-      <section id="contact" className="grid grid-cols-1 sm:grid-cols-2 text-white bg-neutral-900 text-center py-12 px-4">
+      <section id="contact" className="grid grid-cols-1 sm:grid-cols-2 text-white bg-gradient-to-r from-neutral-800 to-black text-center py-12 px-6">
         <div className="flex">
           <div className="mx-4">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl">Schedule your appointment</h1>
@@ -58,6 +56,7 @@ export default function Home() {
         <div className="order-last sm:order-last">
           <ContactForm/>
         </div>
+        
       </section>
       <section>
         <Footer />

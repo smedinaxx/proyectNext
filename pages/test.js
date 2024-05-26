@@ -30,6 +30,7 @@ export default function Test() {
 
     return (
         <Layout>
+            
             <div className="bg-black text-start pb-6 pt-24">
             <input className="mx-6 px-4 py-1" type="email" placeholder="Email" />
             <button onClick={sendEmail} className="ml-2 text-white text-sm border border-purple-500 bg-black hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 py-2 rounded-xl mt-2 p-2 top-0 left-0">

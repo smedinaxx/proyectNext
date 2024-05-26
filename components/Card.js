@@ -7,8 +7,8 @@ export default function Card() {
       <div className='image-container'>
         <Image
           src='/monitorBenq.jpg'
-          width={500}
-          height={500}
+          width={400}
+          height={400}
           alt='Picture of the author'
           layout='responsive'
           className='hover:scale-105 transition duration-500 ease-in-out'

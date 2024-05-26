@@ -11,7 +11,7 @@ function NavBar() {
           <div>
             <div className="flex items-center justify-between py-2 md:py-5 md:block">
 
-              <Link href="#">
+              <Link href="/">
                 <Image
                   src="/logomdx.jpeg"
                   width={200}
@@ -66,6 +66,20 @@ function NavBar() {
                 <li className="pb-3 text-base text-neutral-400 py-2 px-6 text-center  border-b md:border-b-0  hover:text-white  border-lime-700  md:hover:text-white md:hover:bg-transparent">
                   <Link href="#contact" onClick={() => setNavbar(!navbar)}>
                     CONTACT US
+                  </Link>
+                </li>
+                <li className="pb-3 text-base text-neutral-400 py-2 px-6 text-center border-b md:border-b-0 hover:text-white border-lime-700 md:hover:text-white md:hover:bg-transparent flex items-center justify-center">
+                  <Link href="#" onClick={() => setNavbar(!navbar)}>
+                    <div className="flex items-center">
+                    <Image
+                        src="/cart.svg"
+                        width={20}
+                        height={20}
+                        alt="cart"
+                        className="filter invert ml-2"
+                      />
+                      <span className='ml-2'>CART</span>
+                    </div>
                   </Link>
                 </li>
               </ul>

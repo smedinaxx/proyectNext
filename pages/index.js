@@ -32,12 +32,12 @@ export default function Home() {
       <LoginButton></LoginButton>
 
       <h1 className='text-3xl text-white text-center bg-black py-6'>PRODUCTS BY TOP BRANDS</h1>
-      <section id="products" className="grid grid-cols-1 px-10 sm:grid-cols-2 lg:grid-cols-4 gap-6 bg-black pb-3">
+      <section id="products" className="grid grid-cols-1 px-4 sm:px-12 md:px-20 lg:px-20 xl:px-20 sm:grid-cols-2 lg:grid-cols-4 gap-6 bg-black pb-3">
 
-        <Card imageUrl='/asus.jpg' title='PRODUCTS ASUS ROG' details='The best components for competitive gamers'/>
-        <Card imageUrl='/alienware.jpg' title='PRODUCTS ASUS ROG' details='The best components for competitive gamers'/>
-        <Card imageUrl='/razer.jpg' title='PRODUCTS ASUS ROG' details='The best components for competitive gamers'/>
-        <Card imageUrl='/aourus.jpg' title='PRODUCTS ASUS ROG' details='The best components for competitive gamers'/>
+        <Card imageUrl='/asus.jpg' title='ASUS ROG PRODUCTS' details='The best components for competitive gamers'/>
+        <Card imageUrl='/alienware.jpg' title='ALIENWARE PRODUCTS' details='The best components for competitive gamers'/>
+        <Card imageUrl='/razer.jpg' title='RAZER PRODUCTS' details='The best components for competitive gamers'/>
+        <Card imageUrl='/aourus.jpg' title='AOURUS PRODUCTS' details='The best components for competitive gamers'/>
 
       </section>
       <section

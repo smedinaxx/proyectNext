@@ -22,7 +22,7 @@ export default function Home() {
           <h1 className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold mb-2'>ALL THE BEST COMPONENTS</h1>
           <p className='text-lg text-white md:text-3xl lg:text-4xl mb-12'>FOR YOUR SETUPS</p>
           <div className='text-center'>
-            <Link href={"/test"}>
+            <Link href={"/setUp"}>
           <button className='text-white text-sm border border-purple-500 bg-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 py-2 rounded-xl mt-2 px-16'>Click here</button>
           </Link>
         </div>
@@ -31,13 +31,13 @@ export default function Home() {
 
       <LoginButton></LoginButton>
 
-      <h2 className='text-white text-center text-3xl bg-black py-3'>PRODUCTS</h2>
+      <h1 className='text-3xl text-white text-center bg-black py-6'>PRODUCTS BY TOP BRANDS</h1>
       <section id="products" className="grid grid-cols-1 px-10 sm:grid-cols-2 lg:grid-cols-4 gap-6 bg-black pb-3">
 
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card imageUrl='/asus.jpg' title='PRODUCTS ASUS ROG' details='The best components for competitive gamers'/>
+        <Card imageUrl='/alienware.jpg' title='PRODUCTS ASUS ROG' details='The best components for competitive gamers'/>
+        <Card imageUrl='/razer.jpg' title='PRODUCTS ASUS ROG' details='The best components for competitive gamers'/>
+        <Card imageUrl='/aourus.jpg' title='PRODUCTS ASUS ROG' details='The best components for competitive gamers'/>
 
       </section>
       <section

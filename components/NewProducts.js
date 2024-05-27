@@ -1,5 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import newArrivals from '../pages/newArrivals';
 
 export default function Page() {
   return (
@@ -23,8 +25,10 @@ export default function Page() {
         textAlign: 'center',
       }}>
         <h1 className='mt-4 text-3xl sm:text-4xl md:text-5xl lg:text-7xl'>NEW ARRIVALS</h1>
-        <p>PREMIUM PRODUCTS</p>
+        <p className='pb-4'>PREMIUM PRODUCTS</p>
+        <Link href={"/newArrivals"}>
         <button className='text-white text-sm border border-purple-500 bg-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 py-2 rounded-xl mt-2 px-16'>See more</button>
+        </Link>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer id='projects' className="w-full bg-black border-t border-lime-700">
+    <footer id='projects' className="w-full bg-black border-t border-lime-700 relative top-0">
       <div className="container px-5 py-4 md:py-8 mx-auto flex items-center justify-center sm:md:justify-between md:justify-between sm:flex-row flex-col">
         <p className="text-md text-neutral-400 sm:ml-4 sm:pl-4 sm:py-2 sm:mt-0 mt-4">© 2024 SMEDINAXX
         </p>

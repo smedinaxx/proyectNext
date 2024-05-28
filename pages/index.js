@@ -19,7 +19,7 @@ export default function Home() {
         className="bg-black text-center flex relative mt-18">
         <Banner></Banner>
         <div className='w-full absolute z-10 top-1/4 md:top-1/3 lg:top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
-          <h1 className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold mb-2'>ALL THE BEST COMPONENTS</h1>
+          <h1 className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold mb-2 mt-16'>ALL THE BEST COMPONENTS</h1>
           <p className='text-lg text-white md:text-3xl lg:text-4xl mb-12'>FOR YOUR SETUPS</p>
           <div className='text-center'>
             <Link href={"/setUp"}>
@@ -31,8 +31,8 @@ export default function Home() {
 
       <LoginButton></LoginButton>
 
-      <h1 className='text-3xl text-white text-center bg-black py-6'>PRODUCTS BY TOP BRANDS</h1>
-      <section id="products" className="grid grid-cols-1 px-4 sm:px-12 md:px-20 lg:px-20 xl:px-20 sm:grid-cols-2 lg:grid-cols-4 gap-6 bg-black pb-3">
+      <h1 className='text-3xl text-white text-center bg-black py-6 bg-black'>PRODUCTS BY TOP BRANDS</h1>
+      <section id="products" className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 px-8 sm:px-12 md:px-20 lg:px-20 xl:px-20 bg-gradient-to-r from-neutral-700 to-black py-6">
 
         <Card imageUrl='/asus.jpg' title='ASUS ROG PRODUCTS' details='The best components for competitive gamers'/>
         <Card imageUrl='/alienware.jpg' title='ALIENWARE PRODUCTS' details='The best components for competitive gamers'/>

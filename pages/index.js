@@ -22,7 +22,7 @@ export default function Home() {
           <h1 className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold mb-2 mt-16'>ALL THE BEST COMPONENTS</h1>
           <p className='text-lg text-white md:text-3xl lg:text-4xl mb-12'>FOR YOUR SETUPS</p>
           <div className='text-center'>
-            <Link href={"/setUp"}>
+            <Link href={"/setup"}>
           <button className='text-white text-sm border border-purple-500 bg-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 py-2 rounded-xl mt-2 px-16'>Click here</button>
           </Link>
         </div>

@@ -6,7 +6,7 @@ export default function LoginButton() {
     return (
       <div className="text-white flex justify-center bg-black py-4">
         Signed in as {session.user.email} <br />
-        <img className="rounded-full w-12" src={session.user.image} alt={session.user.name}/>
+        <img className="rounded-full w-12" src={session.user.image} alt={session.user.name} unoptimized/>
         <br/>
         <p>{session.user.name}</p>
         

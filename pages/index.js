@@ -22,7 +22,7 @@ export default function Home() {
           <h1 className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold mb-2 mt-16'>ALL THE BEST COMPONENTS</h1>
           <p className='text-lg text-white md:text-3xl lg:text-4xl mb-12'>FOR YOUR SETUPS</p>
           <div className='text-center'>
-            <Link href={"/setup"}>
+            <Link href={"/layoutgrid"}>
           <button className='text-white text-sm border border-purple-500 bg-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 py-2 rounded-xl mt-2 px-16'>Click here</button>
           </Link>
         </div>
@@ -34,10 +34,10 @@ export default function Home() {
       <h1 className='text-3xl text-white text-center bg-black py-6 bg-black'>PRODUCTS BY TOP BRANDS</h1>
       <section id="products" className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 px-8 sm:px-12 md:px-20 lg:px-20 xl:px-20 bg-gradient-to-r from-neutral-700 to-black py-6">
 
-        <Card imageUrl='/asus.jpg' title='ASUS ROG PRODUCTS' details='The best components for competitive gamers'/>
-        <Card imageUrl='/alienware.jpg' title='ALIENWARE PRODUCTS' details='The best components for competitive gamers'/>
-        <Card imageUrl='/razer.jpg' title='RAZER PRODUCTS' details='The best components for competitive gamers'/>
-        <Card imageUrl='/aourus.jpg' title='AOURUS PRODUCTS' details='The best components for competitive gamers'/>
+        <Card imageUrl='/productscards/asus.jpg' title='ASUS ROG PRODUCTS' details='The best components for competitive gamers'/>
+        <Card imageUrl='/productscards/nzxt.png' title='NZXT PRODUCTS' details='The best components for competitive gamers'/>
+        <Card imageUrl='/productscards/razer.jpg' title='RAZER PRODUCTS' details='The best components for competitive gamers'/>
+        <Card imageUrl='/productscards/aourus.jpg' title='AOURUS PRODUCTS' details='The best components for competitive gamers'/>
 
       </section>
       <section

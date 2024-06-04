@@ -96,7 +96,7 @@ const cards = [
   {
     id: 1,
     content: <SkeletonOne />,
-    className: "col-span-1 md:col-span-2",
+    className: "col-span-1 md:col-span-1",
     thumbnail:
       "/layoutgrid/laptop.jpg",
   },
@@ -117,14 +117,14 @@ const cards = [
   {
     id: 4,
     content: <SkeletonFour />,
-    className: "col-span-1 md:col-span-2",
+    className: "col-span-1 md:col-span-1",
     thumbnail:
       "/layoutgrid/setup4.jpg",
   },
   {
     id: 5,
     content: <SkeletonFive />,
-    className: "col-span-1 md:col-span-3",
+    className: "col-span-1 md:col-span-1",
     thumbnail:
       "/newProducts.jpg",
   },

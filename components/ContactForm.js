@@ -6,7 +6,7 @@ const ContactForm = () => {
     name: '',
     email: '',
     subject: '',
-    description: ''
+    description: '',
   });
 
   const handleChange = (event) => {

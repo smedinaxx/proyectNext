@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import newArrivals from '../pages/newarrivals';
 
 export default function Page() {
   return (

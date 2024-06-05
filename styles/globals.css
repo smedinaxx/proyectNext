@@ -164,17 +164,16 @@ body {
 }
 
 
-/*
-  button{
+  /*button{
   background: black;
   cursor: pointer;
   border: none;
-  padding: 16px 32px;
+  padding: 2px 18px 2px 18px;
   color: #fff;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 15pxpx;
+  font-weight:400;
   position: relative;
-  border-radius: 12px;
+  border-radius: 4px;
 }
 
 button::before{
@@ -187,7 +186,7 @@ button::before{
   height: 100%;
   background: linear-gradient(
     45deg,
-    red, blue, deeppink, blue, red, blue, deeppink, blue,
+    red, blue, deeppink, blue, red, blue, deeppink, blue
   );
   background-size: 800%;
   border-radius: 10px;

@@ -3,7 +3,7 @@ import {
   PrevButton,
   NextButton,
   usePrevNextButtons
-} from '../emblaCarousel/EmblaCarouselArrowButton'
+} from './EmblaCarouselArrowButton'
 import useEmblaCarousel from 'embla-carousel-react'
 import Image from 'next/image'
 
@@ -21,27 +21,15 @@ const EmblaCarousel = (props) => {
   const SLIDES = [
     {
       url: "/asusprod/roglap.jpg",
-      name: "ASUS G614JI-AS94 ROG Strix G16 (2023)",
-      description: "Gaming Laptop, 16â€ 16:10 FHD 165Hz, GeForce RTX 4070, Intel Core i9-13980HX, 16GB DDR5, 1TB PCIe SSD, Wi-Fi 6E, Windows 11, G614JI-AS94, Eclipse Gray",
-      price: "39,999",
     },
     {
       url: "/asusprod/roglap1.jpg",
-      name: "ASUS G614JI-AS94 ROG Strix G16 (2023)",
-      description: "Gaming Laptop, 16â€ 16:10 FHD 165Hz, GeForce RTX 4070, Intel Core i9-13980HX, 16GB DDR5, 1TB PCIe SSD, Wi-Fi 6E, Windows 11, G614JI-AS94, Eclipse Gray",
-      price: "39,999",
     },
     {
       url: "/asusprod/roglap2.jpg",
-      name: "ASUS G614JI-AS94 ROG Strix G16 (2023)",
-      description: "Gaming Laptop, 16â€ 16:10 FHD 165Hz, GeForce RTX 4070, Intel Core i9-13980HX, 16GB DDR5, 1TB PCIe SSD, Wi-Fi 6E, Windows 11, G614JI-AS94, Eclipse Gray",
-      price: "39,999",
     },
     {
       url: "/asusprod/roglap3.jpg",
-      name: "ASUS G614JI-AS94 ROG Strix G16 (2023)",
-      description: "Gaming Laptop, 16â€ 16:10 FHD 165Hz, GeForce RTX 4070, Intel Core i9-13980HX, 16GB DDR5, 1TB PCIe SSD, Wi-Fi 6E, Windows 11, G614JI-AS94, Eclipse Gray",
-      price: "39,999",
     },
   ];
 

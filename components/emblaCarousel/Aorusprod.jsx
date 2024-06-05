@@ -20,22 +20,16 @@ const EmblaCarousel = (props) => {
 
   const SLIDES = [
     {
-      url: "/asusprod/tabletrog1.jpg",
-      name: "ASUS G614JI-AS94 ROG Strix G16 (2023)",
-      description: "Gaming Laptop, 16â€ 16:10 FHD 165Hz, GeForce RTX 4070, Intel Core i9-13980HX, 16GB DDR5, 1TB PCIe SSD, Wi-Fi 6E, Windows 11, G614JI-AS94, Eclipse Gray",
-      price: "39,999",
+      url: "/aorusprod/aorus.jpg",
     },
     {
-      url: "/asusprod/tabletrog.jpg",
-      name: "ASUS G614JI-AS94 ROG Strix G16 (2023)",
-      description: "Gaming Laptop, 16â€ 16:10 FHD 165Hz, GeForce RTX 4070, Intel Core i9-13980HX, 16GB DDR5, 1TB PCIe SSD, Wi-Fi 6E, Windows 11, G614JI-AS94, Eclipse Gray",
-      price: "39,999",
+      url: "/aorusprod/aorus1.jpg",
     },
     {
-      url: "/asusprod/tabletrog2.jpg",
-      name: "ASUS G614JI-AS94 ROG Strix G16 (2023)",
-      description: "Gaming Laptop, 16â€ 16:10 FHD 165Hz, GeForce RTX 4070, Intel Core i9-13980HX, 16GB DDR5, 1TB PCIe SSD, Wi-Fi 6E, Windows 11, G614JI-AS94, Eclipse Gray",
-      price: "39,999",
+      url: "/aorusprod/aorus2.jpg",
+    },
+    {
+      url: "/aorusprod/aorus3.jpg",
     },
   ];
 

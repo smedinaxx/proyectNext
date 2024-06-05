@@ -2,12 +2,14 @@
 import React, { useState, useRef, useEffect } from "react";
 import { LayoutGrid } from "../components/ui/layout-grid";
 import Layout from "../components/Layout";
+import {BackgroundBeams} from "../components/ui/BackgroundBeams"
 
 export default function LayoutGridDemo() {
   return (
     <Layout>
-      <div className="h-screen pt-24 sm:pt-32 w-full bg-gradient-to-r from-neutral-700 to-black flex flex-col justify-center items-center">
-        <h1 className="text-white text-lg sm:text-3xl">SETUPS IDEAS</h1>
+      <BackgroundBeams></BackgroundBeams>
+      <div className="h-screen pt-24 pb-8 sm:pt-32 w-full bg-gradient-to-r from-neutral-900 to-black flex flex-col justify-center items-center">
+        <h1 className="text-white text-lg sm:text-3xl pb-6">BUILDING GREAT SPACE TO WORK</h1>
         <LayoutGrid cards={cards} />
       </div>
     </Layout>
@@ -91,6 +93,21 @@ const SkeletonFive = () => {
     </div>
   );
 };
+const SkeletonSix = () => {
+  return (
+    <div>
+      <p className="font-bold text-4xl text-white">Rivers are serene</p>
+      <p className="font-normal text-base text-white"></p>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        A house by the river is a place of peace and tranquility. It&apos;s the
+        perfect place to relax, unwind, and enjoy life.
+      </p>
+      <button className='text-white text-sm border border-purple-500 bg-black hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 py-1 rounded-xl px-6'>
+            See more
+      </button>
+    </div>
+  );
+};
 
 const cards = [
   {
@@ -98,34 +115,41 @@ const cards = [
     content: <SkeletonOne />,
     className: "col-span-1 md:col-span-1",
     thumbnail:
-      "/layoutgrid/laptop.jpg",
+      "/layoutgrid/minimal.jpg",
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
     thumbnail:
-      "/layoutgrid/setup1.jpg",
+      "/layoutgrid/modern.jpg",
   },
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
     thumbnail:
-      "/layoutgrid/setup3.jpg",
+      "/layoutgrid/modern2.jpg",
   },
   {
     id: 4,
     content: <SkeletonFour />,
     className: "col-span-1 md:col-span-1",
     thumbnail:
-      "/layoutgrid/setup4.jpg",
+      "/layoutgrid/nice.jpg",
   },
   {
     id: 5,
     content: <SkeletonFive />,
     className: "col-span-1 md:col-span-1",
     thumbnail:
-      "/newProducts.jpg",
+    "/layoutgrid/setup1.jpg",
+  },
+  {
+    id: 6,
+    content: <SkeletonSix/>,
+    className: "col-span-1 md:col-span-1",
+    thumbnail:
+    "/layoutgrid/setup3.jpg",
   },
 ];

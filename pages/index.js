@@ -37,7 +37,7 @@ export default function Home() {
 
         <Card imageUrl='/productscards/asus.jpg' title='ASUS ROG PRODUCTS' details='The best components for competitive gamers' linkUrl={'prodasus'}/>
         <Card imageUrl='/productscards/nzxt.png' title='NZXT PRODUCTS' details='The best components for competitive gamers' linkUrl={'prodnzxt'}/>
-        <Card imageUrl='/productscards/razer.jpg' title='RAZER PRODUCTS' details='The best components for competitive gamers' linkUrl={'prodrazer'}/>
+        <Card imageUrl='/productscards/razer1.jpg' title='RAZER PRODUCTS' details='The best components for competitive gamers' linkUrl={'prodrazer'}/>
         <Card imageUrl='/productscards/aourus.jpg' title='AOURUS PRODUCTS' details='The best components for competitive gamers' linkUrl={'prodaorus'}/>
 
       </section>
@@ -47,7 +47,7 @@ export default function Home() {
         <NewProducts></NewProducts>
       </section>
 
-      <section id="contact" className="grid grid-cols-1 sm:grid-cols-2 text-white bg-gradient-to-r from-neutral-800 to-black text-center py-12 px-6">
+      <section id="contact" className="grid grid-cols-1 sm:grid-cols-2 text-white bg-gradient-to-r from-neutral-900 to-black text-center py-12 px-6">
         <div className="flex">
           <div className="mx-4">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl">Schedule your appointment</h1>

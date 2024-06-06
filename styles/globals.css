@@ -164,7 +164,7 @@ body {
 }
 
 
-  /*button{
+  form{
   background: black;
   cursor: pointer;
   border: none;
@@ -176,7 +176,7 @@ body {
   border-radius: 4px;
 }
 
-button::before{
+form::before{
   content: "";
   position: absolute;
   top: 0;
@@ -186,11 +186,11 @@ button::before{
   height: 100%;
   background: linear-gradient(
     45deg,
-    red, blue, deeppink, blue, red, blue, deeppink, blue
+    #0075a3, #00ff00, #0075a3, #00ff00, #0075a3, #00ff00, #0075a3, #00ff00
   );
   background-size: 800%;
   border-radius: 10px;
-  filter: blur(8px);
+  filter: blur(6px);
   animation: glowing 20s linear infinite;
 }
 @keyframes glowing {
@@ -204,4 +204,4 @@ button::before{
     background-position: 0 0;
   }
   
-}*/
+}

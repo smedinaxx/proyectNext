@@ -35,7 +35,7 @@ const Product = () => {
     ];
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-10">
             {products.map((product, index) => (
                 <div key={index} className="hover:scale-105 transition duration-500 ease-in-out card-container rounded-xl overflow-hidden border border-lime-700 w-80">
                     <div className="image-container relative w-full h-60">

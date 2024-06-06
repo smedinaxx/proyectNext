@@ -26,8 +26,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="lg:w-3/4 mx-auto bg-black drop-shadow-2xl rounded px-8 pt-6 pb-8 mb-4 border border-lime-900">
-      <form onSubmit={handleSubmit}>
+    <div className="lg:w-3/4 mx-auto bg-black drop-shadow-2xl rounded mb-4">
+      <form className='p-6' onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block text-lime-600 text-sm font-semibold mb-2" htmlFor="name">
             Full Name

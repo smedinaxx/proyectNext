@@ -23,7 +23,7 @@ const NewArrivals = () => {
                     <div className="relative flex-1 max-w-xl z-10">
                         <div className="relative z-10 text-white p-4">
                             <h1>NI NININI NIII NIII</h1>
-                            <p>sjsjsjs jsjsj jsjsj jsjj sjjsj jsjsjsjjss jsjjsj sjj</p>
+                            <p>sjsjsjs jsjsj jsjsj jsjj sjjsj jsjsjsjjss jsjjsj cvcvsjj</p>
                             <Button buttonText={"Order Now"}/>
                         </div>
                     </div>

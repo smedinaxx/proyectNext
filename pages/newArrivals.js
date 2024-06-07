@@ -1,8 +1,9 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Button from "../components/Button";
+import Link from "next/link";
 
-const NewArrivals = () => {
+const Home = () => {
     return (
         <Layout>
             <div className="px-4 pb-12 sm:px-6 mt-16 sm:mt-16 md:mt-20 bg-gradient-to-r from-neutral-700 to-black">
@@ -24,7 +25,9 @@ const NewArrivals = () => {
                         <div className="relative z-10 text-white p-4">
                             <h1 className="font-bold mb-4 text-xl text-justify">Razer Blade 16” | Worlds First OLED 240 Hz</h1>
                             <p className="text-justify">Meet the new Razer Blade 16—featuring the worlds first OLED 240 Hz 16” display. Armed with the latest @intelgaming Core i9 HX Series processor, experience more power per cubic inch than ever before.</p>
+                            <Link href={"/#contact"}>
                             <Button buttonText={"Order Now"}/>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -44,7 +47,9 @@ const NewArrivals = () => {
                         <div className="relative z-10 text-white p-4">
                         <h1 className="font-bold mb-4 text-xl text-justify">Razer Cobra Line | Perfected for Play</h1>
                         <p className="text-justify">From vivid Razer Chroma RGB to cutting-edge customizability and connectivity, get the performance, flair, and freedom you need with all-rounded gaming mice that are perfected for play.</p>
+                        <Link href={"/#contact"}>
                             <Button buttonText={"Order Now"}/>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -64,7 +69,9 @@ const NewArrivals = () => {
                         <div className="relative z-10 text-white p-4">
                             <h1 className="font-bold mb-4 text-xl text-justify">Razer Cthulhu | The Ultimate Gaming Chair</h1>
                             <p className="text-justify">Never have to leave your chair again as eight independent robotic arms cater to your every need.</p>
+                            <Link href={"/#contact"}>
                             <Button buttonText={"Order Now"}/>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -85,7 +92,9 @@ const NewArrivals = () => {
                         <div className="relative z-10 text-white p-4">
                             <h1 className="font-bold mb-4 text-xl text-justify">AORUS GeForce RTX™ 40 Series</h1>
                             <p className="text-justify">Hitting the apex in gaming with the apex of cooling. This is the all-new AORUS GeForce RTX™ 40 Series graphics card.</p>
+                            <Link href={"/#contact"}>
                             <Button buttonText={"Order Now"}/>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -94,4 +103,4 @@ const NewArrivals = () => {
     );
 };
 
-export default NewArrivals;
+export default Home;

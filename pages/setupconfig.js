@@ -3,13 +3,14 @@ import React, { useState, useRef, useEffect } from "react";
 import { LayoutGrid } from "../components/ui/layout-grid";
 import Layout from "../components/Layout";
 import {BackgroundBeams} from "../components/ui/BackgroundBeams"
+import Image from "next/image";
 
 export default function LayoutGridDemo() {
   return (
     <Layout>
       <BackgroundBeams></BackgroundBeams>
-      <div className="h-screen pt-24 pb-8 sm:pt-32 w-full bg-gradient-to-r from-neutral-900 to-black flex flex-col justify-center items-center">
-        <h1 className="text-white text-lg sm:text-3xl pb-6">BUILDING GREAT SPACE TO WORK</h1>
+      <div className="h-screen pt-24 pb-4 sm:pt-32 w-full bg-gradient-to-r from-black to-neutral-900 flex flex-col justify-center items-center">
+        <h1 className="font-bold text-white text-xl sm:text-3xl pb-6">BUILDING GREAT SPACE TO WORK</h1>
         <LayoutGrid cards={cards} />
       </div>
     </Layout>
@@ -113,43 +114,25 @@ const cards = [
   {
     id: 1,
     content: <SkeletonOne />,
-    className: "col-span-1 md:col-span-1",
-    thumbnail:
-      "/layoutgrid/minimal.jpg",
+    className: "col-span-1 ",
+    thumbnail:"/layoutgrid/minimal.jpg",
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
-    thumbnail:
-      "/layoutgrid/modern.jpg",
+    thumbnail:"/layoutgrid/modern.jpg",
   },
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
-    thumbnail:
-      "/layoutgrid/modern2.jpg",
+    thumbnail:"/layoutgrid/modern2.jpg",
   },
   {
     id: 4,
     content: <SkeletonFour />,
-    className: "col-span-1 md:col-span-1",
-    thumbnail:
-      "/layoutgrid/nice.jpg",
-  },
-  {
-    id: 5,
-    content: <SkeletonFive />,
-    className: "col-span-1 md:col-span-1",
-    thumbnail:
-    "/layoutgrid/setup1.jpg",
-  },
-  {
-    id: 6,
-    content: <SkeletonSix/>,
-    className: "col-span-1 md:col-span-1",
-    thumbnail:
-    "/layoutgrid/setup3.jpg",
+    className: "col-span-1",
+    thumbnail:"/layoutgrid/nice.jpg",
   },
 ];

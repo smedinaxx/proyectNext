@@ -51,7 +51,7 @@ export default function Home() {
         <div className="flex">
           <div className="mx-4">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl">Schedule your appointment</h1>
-            <p className="text-lg sm:text-xl lg:text-2xl  mt-8 text-justify mb-6">Fill out the form below, so that an expert can contact you in order to guide you in the acquisition of components and offer you the assembly of the same</p>
+            <p className="text-lg sm:text-xl lg:text-2xl mt-8 text-justify mb-6">Fill out the form below, so that an expert can contact you in order to guide you in the acquisition of components and offer you the assembly of the same</p>
           </div>
         </div>
         <div className="order-last sm:order-last">

@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/Layout"
+import LayoutSimple from "../components/LayoutSimple"
 import Button from "../components/Button"
 import Razerprod from "../components/emblaCarousel/Razerprod";
 import Razerprod2 from "../components/emblaCarousel/Razerprod2";
@@ -7,7 +7,7 @@ import Razerprod2 from "../components/emblaCarousel/Razerprod2";
 export default function Home() {
     return (
         <div className="bg-neutral-900 text-white text-md">
-            <Layout>
+            <LayoutSimple>
                 <div className="pt-28 text-center mx-2">
 
                     <div className="border-b border-neutral-500 mx-4 sm:mx-2 md:mx-14 lg:mx-20 xl:mx-20 pb-6">
@@ -27,7 +27,7 @@ export default function Home() {
                     </div>
 
                 </div>
-            </Layout>
+                </LayoutSimple>
         </div>
     )
 }

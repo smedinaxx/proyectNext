@@ -1,12 +1,12 @@
 import { MongoClient } from "mongodb";
 
 export default async function handler(req, res){
-    const {method, body, uqery} = req;
+    const {method, body, query} = req;
     //recordemos que esto es igual a hacer esto
     //const method= req.method;
     //const body= req.body;
     //const query= req.query
-    const client= new MongoClient.connect(process.env.MONGODB_URI);
+    const client= await MongoClient.connect(process.env.MONGODB_URI);
     const db = client.db("calls");
     const callsCollection= db.collection("calls");
 

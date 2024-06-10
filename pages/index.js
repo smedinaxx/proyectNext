@@ -37,7 +37,7 @@ export default function Home() {
 
         <Card imageUrl='/productscards/asus.jpg' title='ASUS ROG PRODUCTS' details='The best components for competitive gamers' linkUrl={'prodasus'}/>
         <Card imageUrl='/productscards/nzxt.png' title='NZXT PRODUCTS' details='The best components for competitive gamers' linkUrl={'prodnzxt'}/>
-        <Card imageUrl='/productscards/razer1.jpg' title='RAZER PRODUCTS' details='The best components for competitive gamers' linkUrl={'prodrazer'}/>
+        <Card imageUrl='/productscards/razer1.jpg' title='RAZER PRODUCTS' details='The best components for competitive gamers' linkUrl={'razerproducts'}/>
         <Card imageUrl='/productscards/aourus.jpg' title='AOURUS PRODUCTS' details='The best components for competitive gamers' linkUrl={'prodaorus'}/>
 
       </section>

@@ -1,7 +1,7 @@
-import axios from "axios";
+{/*import axios from "axios";
 import { useState, useEffect } from "react";
 
-export default function productsPage(){
+export default function ProductsPage(){
     const [products, setProducts]= useState([]);
 
     useEffect(()=>{
@@ -19,4 +19,4 @@ export default function productsPage(){
             </ul>
         </div>
     );
-}
+}*/}

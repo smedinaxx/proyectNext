@@ -2,7 +2,7 @@ import React from 'react';
 import EjemploProps from '../emblaCarousel/EjemploProps'
 import Button from '../Button';
 
-const EjemploEmblaProd = ({ product }) => {
+const EjemploProducts = ({ product }) => {
   const { name, description, images, price, options } = product;
 
   return (
@@ -27,4 +27,4 @@ const EjemploEmblaProd = ({ product }) => {
   );
 };
 
-export default EjemploEmblaProd;
+export default EjemploProducts;

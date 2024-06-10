@@ -7,7 +7,7 @@ import {
 import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 
-const ejemploEmbla = ({ slides, options }) => {
+const EjemploEmbla = ({ slides, options }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   const {
@@ -45,4 +45,4 @@ const ejemploEmbla = ({ slides, options }) => {
   );
 };
 
-export default ejemploEmbla;
+export default EjemploEmbla;

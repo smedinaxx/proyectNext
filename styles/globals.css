@@ -96,8 +96,9 @@ body {
   color: var(--detail-high-contrast);
 }
 .embla__button__svg {
-  width: 35%;
-  height: 35%;
+  width: 45%;
+  height: 45%;
+  color: #00ff00;
 }
 .embla__dots {
   display: flex;

@@ -26,8 +26,8 @@ const EjemploEmbla = ({ slides, options }) => {
               <div className="embla__slide__inner">
                 <div className="embla__slide__img">
                   <Image
-                    width={400}
-                    height={400}
+                    width={500}
+                    height={500}
                     src={slide.url}
                     alt={slide.alt || 'Imagen de producto'}
                   />

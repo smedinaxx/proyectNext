@@ -16,7 +16,7 @@ export default function Home() {
       <NavBar />
       <section
         id="setup"
-        className="bg-black text-center flex relative mt-18 sm:mt-18 md:mt-20 lg:mt-20">
+        className="bg-black text-center flex relative mt-20">
         <Banner></Banner>
         <div className='w-full absolute z-10 top-1/4 md:top-1/3 lg:top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
           <h1 className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold mb-2 mt-16'>ALL THE BEST COMPONENTS</h1>
@@ -35,10 +35,10 @@ export default function Home() {
       <section id="products" className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 px-8 sm:px-12 md:px-20 lg:px-20 xl:px-20 bg-gradient-to-r from-neutral-700 to-black py-6">
 
 
-        <Card imageUrl='/productscards/asus.jpg' title='ASUS ROG PRODUCTS' details='The best components for competitive gamers' linkUrl={'prodasus'}/>
-        <Card imageUrl='/productscards/nzxt.png' title='NZXT PRODUCTS' details='The best components for competitive gamers' linkUrl={'prodnzxt'}/>
-        <Card imageUrl='/productscards/razer1.jpg' title='RAZER PRODUCTS' details='The best components for competitive gamers' linkUrl={'razerproducts'}/>
-        <Card imageUrl='/productscards/aourus.jpg' title='AOURUS PRODUCTS' details='The best components for competitive gamers' linkUrl={'prodaorus'}/>
+        <Card imageUrl='/productscards/asus.jpg' title='ASUS ROG PRODUCTS' details='The best components for competitive gamers' linkUrl={'cardasus'}/>
+        <Card imageUrl='/productscards/nzxt.png' title='NZXT PRODUCTS' details='The best components for competitive gamers' linkUrl={'cardnzxt'}/>
+        <Card imageUrl='/productscards/razer1.jpg' title='RAZER PRODUCTS' details='The best components for competitive gamers' linkUrl={'cardrazer'}/>
+        <Card imageUrl='/productscards/aourus.jpg' title='AOURUS PRODUCTS' details='The best components for competitive gamers' linkUrl={'cardaorus'}/>
 
       </section>
       <section

@@ -1,14 +1,14 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { LayoutGrid } from "../components/ui/layout-grid";
-import Layout from "../components/Layout";
+import LayoutSimple from "../components/LayoutSimple";
 import { BackgroundBeams } from "../components/ui/BackgroundBeams";
 import Image from "next/image";
 
 
 export default function LayoutGridDemo() {
   return (
-    <Layout>
+    <LayoutSimple>
       <BackgroundBeams></BackgroundBeams>
       <div className="h-screen pt-24 pb-4 sm:pt-32 w-full bg-gradient-to-r from-black to-neutral-900 flex flex-col justify-center items-center">
         <h1 className="mx-8 text-center font-bold text-neutral-400 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl pb-2">BUILDING GREAT SPACE TO WORK</h1>
@@ -53,7 +53,7 @@ export default function LayoutGridDemo() {
   </div>
       
       </section>
-    </Layout>
+    </LayoutSimple>
   );
 }
 

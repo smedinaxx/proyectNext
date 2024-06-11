@@ -9,15 +9,15 @@ function NavBar() {
       <nav className="w-full bg-black fixed top-0 left-0 right-0 z-20 border-b border-lime-700 shadow-xl shadow-lime-900">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
-            <div className="flex items-center justify-between py-2 md:py-5 md:block">
+            <div className="flex items-center justify-between md:block">
 
               <Link href="/">
-                <Image
-                  src="/logomdx.jpeg"
-                  width={200}
+              <Image
+                  src="/eclipsemed.png"
+                  width={90}
                   height={30}
                   alt="logo"
-                  className="focus:border-none active:border-none hover:brightness-125"
+                  className="focus:border-none active:border-none hover:brightness-125 sepia-0 hover:sepia"
                 />
               </Link>
 

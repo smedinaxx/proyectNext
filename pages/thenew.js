@@ -1,12 +1,12 @@
 import React from "react";
-import Layout from "../components/Layout";
+import LayoutSimple from "../components/LayoutSimple";
 import Button from "../components/Button";
 import Link from "next/link";
 
 const Home = () => {
     return (
-        <Layout>
-            <div className="px-4 pb-12 sm:px-6 mt-16 sm:mt-16 md:mt-20 bg-gradient-to-r from-neutral-700 to-black">
+        <LayoutSimple>
+            <div className="px-4 pb-12 sm:px-6 mt-20 md:mt-20 bg-gradient-to-r from-neutral-700 to-black">
                 <h1 className="text-center text-2xl md:text-4xl text-white pb-4 pt-12">NEW ARRIVALS, JUST FILL THE FORM & ORDER NOW</h1>
 
                 <div className="relative flex flex-col sm:flex-col md:flex-row justify-center items-center md:space-x-4 py-4 my-4 xl:mx-40">
@@ -99,7 +99,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </Layout>
+        </LayoutSimple>
     );
 };
 

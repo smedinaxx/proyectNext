@@ -23,7 +23,7 @@ const products = [
       { url: "/asusprod/tabletrog1.jpg", alt: "Producto 2 - Imagen 2" },
       { url: "/asusprod/tabletrog2.jpg", alt: "Producto 2 - Imagen 3" },
     ],
-    price:"$4,328.96",
+    price:"$19,599.00",
     options: { loop: true },
   },
   // Añade los demás productos de manera similar

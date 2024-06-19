@@ -206,3 +206,17 @@ form::before{
   }
   
 }
+
+/* Estilos para pantallas grandes */
+.my_logo {
+  width: 180px;
+  height: auto;
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .my_logo {
+    width: 120px;  /* Ajusta el tamaño según sea necesario */
+    height: auto;  /* Ajusta el tamaño según sea necesario */
+  }
+}

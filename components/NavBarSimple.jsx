@@ -6,18 +6,18 @@ function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <div>
-      <nav className="w-full bg-black fixed top-0 left-0 right-0 z-20 border-b border-lime-700 shadow-xl shadow-lime-900">
+      <nav className="w-full bg-black fixed top-0 left-0 right-0 z-20 border-b border-lime-700 shadow-xl shadow-lime-900 py-2">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between md:block">
 
               <Link href="/">
               <Image
-                  src="/eclipsemed.png"
-                  width={90}
+                  src="/smedinaxlogo.jpg"
+                  width={180}
                   height={30}
                   alt="logo"
-                  className="focus:border-none active:border-none hover:brightness-125 sepia-0 hover:sepia"
+                  className="my_logo focus:border-none active:border-none hover:brightness-125 sepia-0 hover:sepia"
                 />
               </Link>
 

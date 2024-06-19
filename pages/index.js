@@ -16,7 +16,7 @@ export default function Home() {
       <NavBar />
       <section
         id="setup"
-        className="bg-black text-center flex relative mt-20">
+        className="bg-black text-center flex relative mt-18 md:mt-20">
         <Banner></Banner>
         <div className='w-full absolute z-10 top-1/4 md:top-1/3 lg:top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
           <h1 className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold mb-2 mt-16'>ALL THE BEST COMPONENTS</h1>

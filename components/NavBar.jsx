@@ -13,7 +13,7 @@ function NavBar() {
 
               <Link href="/">
                 <Image
-                  src="/smedinaxlogo.jpg"
+                  src="/smedinaxlogo.JPG"
                   width={180}
                   height={30}
                   alt="logo"

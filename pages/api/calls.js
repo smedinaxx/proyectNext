@@ -7,8 +7,8 @@ export default async function handler(req, res){
     //const body= req.body;
     //const query= req.query
     const client= await MongoClient.connect(process.env.MONGODB_URI);
-    const db = client.db("calls");
-    const callsCollection= db.collection("calls");
+    const db = client.db("products");
+    const productssCollection= db.collection("products");
 
     switch (method){
         case "POST":
@@ -19,12 +19,12 @@ export default async function handler(req, res){
                     .status(400)
                     .json({message: "Faltan campos obligatorios"});
                 }
-                const newCall= await callsCollection.insertOne({
+                const newProducts= await productsCollection.insertOne({
                     nombre,
                     numero,
                     titulo,
                 });
-                return res.status(201).json(newCall);
+                return res.status(201).json(newProducts);
             }catch (error){
                 return res
                     .status(500)
@@ -33,8 +33,8 @@ export default async function handler(req, res){
             break;
         case "GET":
             try{
-                const calls = await callsCollection.find().toArray();
-                return res.status(200).json(calls);
+                const products = await productsCollection.find().toArray();
+                return res.status(200).json(products);
             } catch (error){
                 return res.status(500).json({message:"Error al obtener las llamadas", error}); }
             }

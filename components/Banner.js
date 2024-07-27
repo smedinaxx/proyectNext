@@ -14,6 +14,7 @@ export default function Page() {
           alt="Picture of the author"
           className='opacity-50'
         />
+        
   
       </div>
     </div>

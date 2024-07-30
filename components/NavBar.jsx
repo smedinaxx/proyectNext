@@ -1,16 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { useCart } from '../context/CartContext'; // Importa el hook useCart
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
+  const { cart } = useCart(); // Obtén la información del carrito
+  const totalItems = cart.reduce((count, product) => count + product.quantity, 0); // Calcula la cantidad total de productos
+
   return (
     <div>
       <nav className="w-full bg-black fixed top-0 left-0 right-0 z-20 border-b border-lime-700 shadow-xl shadow-lime-900 py-2">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between md:block">
-
               <Link href="/">
                 <Image
                   src="/smedinaxlogo.JPG"
@@ -28,13 +31,13 @@ function NavBar() {
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
-                    <Image src="/close.svg" width={25} height={25} alt="logo" />
+                    <Image src="/close.svg" width={25} height={25} alt="close icon" />
                   ) : (
                     <Image
                       src="/hamburger.svg"
                       width={25}
                       height={25}
-                      alt="logo"
+                      alt="menu icon"
                       className="focus:border-none active:border-none"
                     />
                   )}
@@ -47,38 +50,38 @@ function NavBar() {
               className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'p-12 md:p-0 block' : 'hidden'
                 }`}
             >
-              <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="pb-3 text-base text-neutral-400 py-2 md:px-6 text-center border-b md:border-b-0  hover:text-white  border-lime-700  md:hover:text-white  md:hover:bg-transparent">
+              <ul className="h-screen md:h-auto items-center justify-center md:flex">
+                <li className="pb-3 text-base text-neutral-400 py-2 md:px-6 text-center border-b md:border-b-0 hover:text-white border-lime-700 md:hover:text-white md:hover:bg-transparent">
                   <Link href="#setup" onClick={() => setNavbar(!navbar)}>
                     SETUP
                   </Link>
                 </li>
-                <li className="pb-3 text-base text-neutral-400 py-2 px-6 text-center  border-b md:border-b-0  hover:text-white border-lime-700  md:hover:text-white md:hover:bg-transparent">
+                <li className="pb-3 text-base text-neutral-400 py-2 px-6 text-center border-b md:border-b-0 hover:text-white border-lime-700 md:hover:text-white md:hover:bg-transparent">
                   <Link href="#products" onClick={() => setNavbar(!navbar)}>
                     PRODUCTS
                   </Link>
                 </li>
-                <li className="pb-3 text-base text-neutral-400 py-2 px-6 text-center  border-b md:border-b-0  hover:text-white  border-lime-700  md:hover:text-white md:hover:bg-transparent top-0">
+                <li className="pb-3 text-base text-neutral-400 py-2 px-6 text-center border-b md:border-b-0 hover:text-white border-lime-700 md:hover:text-white md:hover:bg-transparent top-0">
                   <Link href="#newproducts" onClick={() => setNavbar(!navbar)}>
                     NEW PRODUCTS
                   </Link>
                 </li>
-                <li className="pb-3 text-base text-neutral-400 py-2 px-6 text-center  border-b md:border-b-0  hover:text-white  border-lime-700  md:hover:text-white md:hover:bg-transparent">
+                <li className="pb-3 text-base text-neutral-400 py-2 px-6 text-center border-b md:border-b-0 hover:text-white border-lime-700 md:hover:text-white md:hover:bg-transparent">
                   <Link href="#contact" onClick={() => setNavbar(!navbar)}>
                     CONTACT US
                   </Link>
                 </li>
                 <li className="pb-3 text-base text-neutral-400 py-2 px-6 text-center border-b md:border-b-0 hover:text-white border-lime-700 md:hover:text-white md:hover:bg-transparent flex items-center justify-center">
-                  <Link href="#" onClick={() => setNavbar(!navbar)}>
+                  <Link href="/cart" onClick={() => setNavbar(!navbar)}>
                     <div className="flex items-center">
-                    <Image
+                      <Image
                         src="/cart.svg"
                         width={20}
                         height={20}
                         alt="cart"
                         className="filter invert ml-2"
                       />
-                      <span className='ml-2'>CART</span>
+                      <span className='ml-2'>CART ({totalItems})</span>
                     </div>
                   </Link>
                 </li>

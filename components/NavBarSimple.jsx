@@ -62,7 +62,7 @@ function NavBar() {
                         alt="cart"
                         className="filter invert ml-2"
                       />
-                      <span className='ml-2'>CART ({totalItems})</span>
+                      <span className='ml-2'>({totalItems})</span>
                     </div>
                   </Link>
                 </li>

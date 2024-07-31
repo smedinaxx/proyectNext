@@ -42,12 +42,6 @@ const ExamplePage = () => {
         {products.map((product) => (
           <div key={product.id}>
             <EjemploProducts product={product} />
-            <button
-              className="btn-add-to-cart"
-              onClick={() => addToCart(product)}
-            >
-              Add to Cart
-            </button>
           </div>
         ))}
       </div>

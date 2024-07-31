@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import { useCart } from '../context/CartContext'; // Importa el hook useCart
+import { useCart } from '../context/CartContext'; 
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
@@ -81,7 +81,7 @@ function NavBar() {
                         alt="cart"
                         className="filter invert ml-2"
                       />
-                      <span className='ml-2'>CART ({totalItems})</span>
+                      <span className='ml-2'> ({totalItems})</span>
                     </div>
                   </Link>
                 </li>

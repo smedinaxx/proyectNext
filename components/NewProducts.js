@@ -6,23 +6,26 @@ export default function Page() {
   return (
     <div style={{ position: 'relative', width: '100%', height: '60vh', maxWidth: '100vw' }}>
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
-        <Image
-          src="/bannerNew.jpg"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-          alt="Picture of the author"
-        />
-      </div>
-      <div style={{
-        position: 'absolute', 
-        top: 0, 
-        left: 0, 
-        width: '100%', 
-        padding: '20px', 
-        color: 'white', 
-        textAlign: 'center',
-      }}>
+      <Image
+  src="/bannerNew.jpg"
+  fill
+  sizes="100vw"
+  style={{
+    objectFit: "cover",
+    objectPosition: "center"
+  }}
+  alt="Picture of the author"
+/>
+</div>
+<div style={{
+  position: 'absolute', 
+  top: 0, 
+  left: 0, 
+  width: '100%', 
+  padding: '20px', 
+  color: 'white', 
+  textAlign: 'center',
+}}>
         <h1 className='mt-4 text-3xl sm:text-4xl md:text-5xl lg:text-7xl'>NEW ARRIVALS</h1>
         <p className='pb-4'>PREMIUM PRODUCTS</p>
         <Link href="/thenew">

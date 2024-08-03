@@ -51,13 +51,13 @@ const ContactForm = () => {
       <form className='p-6' onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block text-lime-600 text-sm font-semibold mb-2" htmlFor="name">
-            Nombre completo
+            Full Name
           </label>
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="name"
             type="text"
-            placeholder="Nombre"
+            placeholder="Name"
             name="name"
             value={formData.name}
             onChange={handleChange}
@@ -79,13 +79,13 @@ const ContactForm = () => {
         </div>
         <div className="mb-4">
           <label className="block text-lime-600 text-sm font-semibold mb-2" htmlFor="subject">
-            Asunto
+            Subject
           </label>
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="subject"
             type="text"
-            placeholder="Asunto"
+            placeholder="Subject"
             name="subject"
             value={formData.subject}
             onChange={handleChange}
@@ -93,7 +93,7 @@ const ContactForm = () => {
         </div>
         <div className="mb-4">
           <label className="block text-lime-600 text-sm font-semibold mb-2" htmlFor="description">
-            Descripción
+          Description
           </label>
           <textarea
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32"
@@ -108,7 +108,7 @@ const ContactForm = () => {
           <button
              type="submit"
              className='text-white text-sm border border-purple-500 bg-transparent hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 py-2 rounded-xl mt-2 px-8 w-full'>
-            Enviar
+            Send Email
           </button>
         </div>
       </form>

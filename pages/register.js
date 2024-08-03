@@ -14,7 +14,9 @@ export default function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await fetch('http://localhost:3001/api/users', {
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api'; // Usa la variable de entorno
+
+        const response = await fetch(`${apiUrl}/users`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -38,7 +40,8 @@ export default function Register() {
 
     return (
         <div className="bg-gradient-to-r from-black to-neutral-900 flex items-center justify-center min-h-screen">
-            <div className="text-black p-6 rounded-lg shadow-lg w-full max-w-md border border-purple-700">
+            <BackgroundBeams />
+            <div className="text-black p-2 py-6 rounded-lg shadow-lg w-full max-w-md border border-purple-700">
                 <form onSubmit={handleSubmit} className="bg-transparent flex flex-col text-black">
                     <input
                         className="mb-4 p-3 border border-gray-300 rounded-md"
@@ -67,14 +70,15 @@ export default function Register() {
                     >
                         Register now
                     </button>
+                    <div className="text-center">
+                        <p className="text-white mb-2">Do you have an account?</p>
+                        <LoginButton />
+                        <Link href={"/"}>
+                            <button className='text-purple-500 flex'>Back home</button>
+                        </Link>
+                    </div>
                 </form>
-                <div className="text-center">
-                    <p className="text-white mb-2">Do you have an account?</p>
-                    <LoginButton />
-                    <Link href={"/"}>
-                    <button className='text-purple-500 flex'>Back home</button>
-                    </Link>
-                </div>
+
                 {message && <p className="text-center text-green-500 mt-4">{message}</p>} {/* Mostrar el mensaje aquí */}
             </div>
         </div>

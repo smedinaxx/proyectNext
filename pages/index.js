@@ -5,7 +5,6 @@ import Card from '../components/Card';
 import NewProducts from '../components/NewProducts';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
-import LoginButton from '../components/LoginButton';
 import Link from 'next/link';
 
 export default function Home() {
@@ -29,7 +28,12 @@ export default function Home() {
         </div>
       </section>
 
-      <LoginButton></LoginButton>
+      <div className="bg-gradient-to-r from-black to-neutral-700 text-center pb-6 py-6">
+        <h1 className='text-white text-3xl'>Do you have an account?</h1>
+        <p className='text-white'>
+          <Link href={"/register"} className='text-lime-400 underline underline-offset-4'>Log in</Link> to complete your purchases faster</p>
+      </div>
+ 
 
       <h1 className='text-2xl text-white text-center bg-black py-6 bg-black'>PRODUCTS BY TOP BRANDS</h1>
       <section id="products" className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 px-8 sm:px-12 md:px-20 lg:px-20 xl:px-20 bg-gradient-to-r from-neutral-700 to-black py-6">

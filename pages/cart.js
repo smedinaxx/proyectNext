@@ -55,7 +55,7 @@ export default function Cart() {
                                         <h2 className="text-md md:text-xl lg:text-2xl xl:text-3xl font-semibold text-white">{product.name}</h2>
                                         <p className="text-sm md:text-md lg:text-lg xl:text-xl text-amber-200">Price: {formatCurrency(product.price)}</p>
                                         <p className="text-sm md:text-md lg:text-lg xl:text-xl text-white">Quantity: {product.quantity}</p>
-                                        <p className="text-md md:text-xl lg:text-2xl xl:text-3xl text-amber-200">Subtotal: {formatCurrency(product.price * product.quantity)}</p>
+                                        <p className="text-sm md:text-md lg:text-lg xl:text-xl text-amber-200">Subtotal: {formatCurrency(product.price * product.quantity)}</p>
                                         <button
                                             className="bg-red-500 text-white py-1 px-4 rounded mt-2"
                                             onClick={() => removeFromCart(product.id)}

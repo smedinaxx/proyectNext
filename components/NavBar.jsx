@@ -1,12 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import { useCart } from '../context/CartContext'; 
+import { useCart } from '../context/CartContext';
+import { useSession, signOut } from "next-auth/react";
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
-  const { cart } = useCart(); // Obtén la información del carrito
-  const totalItems = cart.reduce((count, product) => count + product.quantity, 0); // Calcula la cantidad total de productos
+  const { cart } = useCart();
+  const totalItems = cart.reduce((count, product) => count + product.quantity, 0);
+  const { data: session } = useSession(); // Obtener sesión actual
 
   return (
     <div>
@@ -85,6 +87,25 @@ function NavBar() {
                     </div>
                   </Link>
                 </li>
+                {session && (
+                  <li className="pb-3 text-base text-neutral-400 py-2 px-6 text-center border-b md:border-b-0 hover:text-white border-lime-700 md:hover:text-white md:hover:bg-transparent flex items-center">
+                    <Image
+                      src={session.user.image}
+                      width={30}
+                      height={30}
+                      alt={session.user.name}
+                      className="rounded-full mr-2"
+                      unoptimized
+                    />
+                    <span>{session.user.name}</span>
+                    <button
+                      onClick={() => signOut()}
+                      className="ml-4 text-lime-500 hover:underline"
+                    >
+                      Sign out
+                    </button>
+                  </li>
+                )}
               </ul>
             </div>
           </div>

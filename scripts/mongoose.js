@@ -11,7 +11,7 @@ const port = 3001;
 
 // Configuración de CORS
 app.use(cors({
-    origin: 'http://localhost:3000', 
+    origin: 'https://proyect-next-eight.vercel.app/', 
     methods: ['GET', 'POST', 'PUT', 'DELETE'], 
     credentials: true, 
 }));

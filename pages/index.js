@@ -39,10 +39,10 @@ export default function Home() {
       <section id="products" className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 px-8 sm:px-12 md:px-20 lg:px-20 xl:px-20 bg-gradient-to-r from-neutral-700 to-black py-6">
 
 
-        <Card imageUrl='/productscards/asus.jpg' title='ASUS ROG PRODUCTS' details='The best components for competitive gamers' linkUrl={'cardasus'}/>
-        <Card imageUrl='/productscards/nzxt.png' title='NZXT PRODUCTS' details='The best components for competitive gamers' linkUrl={'cardnzxt'}/>
-        <Card imageUrl='/productscards/razer1.jpg' title='RAZER PRODUCTS' details='The best components for competitive gamers' linkUrl={'cardrazer'}/>
-        <Card imageUrl='/productscards/aourus.jpg' title='AOURUS PRODUCTS' details='The best components for competitive gamers' linkUrl={'cardaorus'}/>
+        <Card imageUrl='/productscards/asus.jpg' title='ASUS ROG PRODUCTS' details='In Search of Incredible.' linkUrl={'cardasus'}/>
+        <Card imageUrl='/productscards/nzxt.png' title='NZXT PRODUCTS' details='For Gamers. By Gamers.' linkUrl={'cardnzxt'}/>
+        <Card imageUrl='/productscards/razer1.jpg' title='RAZER PRODUCTS' details='For Gamers. By Gamers.' linkUrl={'cardrazer'}/>
+        <Card imageUrl='/productscards/aourus.jpg' title='AOURUS PRODUCTS' details='Unleash the Gaming Power' linkUrl={'cardaorus'}/>
 
       </section>
       <section

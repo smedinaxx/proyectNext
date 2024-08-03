@@ -41,7 +41,7 @@ export default function Register() {
     return (
         <div className="bg-gradient-to-r from-black to-neutral-900 flex items-center justify-center min-h-screen">
             <BackgroundBeams />
-            <div className="text-black p-2 py-6 rounded-lg shadow-lg w-full max-w-md border border-purple-700">
+            <div className="text-black p-2 py-6 mx-4 rounded-lg shadow-lg w-full max-w-md border border-purple-700">
                 <form onSubmit={handleSubmit} className="bg-transparent flex flex-col text-black">
                     <input
                         className="mb-4 p-3 border border-gray-300 rounded-md"
@@ -71,10 +71,10 @@ export default function Register() {
                         Register now
                     </button>
                     <div className="text-center">
-                        <p className="text-white mb-2">Do you have an account?</p>
+                        <p className="text-white mb-2 pt-12">Do you have a Github and Google account?</p>
                         <LoginButton />
                         <Link href={"/"}>
-                            <button className='text-purple-500 flex'>Back home</button>
+                            <button className='text-lg text-purple-500 flex pt-6'>Back home</button>
                         </Link>
                     </div>
                 </form>

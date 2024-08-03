@@ -14,6 +14,6 @@ export default function LoginButton() {
   return session ? (
     <button onClick={() => signOut()}>Sign out</button>
   ) : (
-    <button onClick={handleSignIn} className="text-white">Sign in</button>
+    <button onClick={handleSignIn} className="text-purple-500">Log in here</button>
   );
 }

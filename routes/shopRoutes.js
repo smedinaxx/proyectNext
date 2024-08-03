@@ -16,7 +16,8 @@ router.post('/products', async (req, res) => {
     }
   });
 
-  router.get('/products', async (req, res) => {
+// Obtener todos los productos
+router.get('/products', async (req, res) => {
     try {
       const products = await Product.find();
       res.status(200).json(products);
@@ -25,9 +26,9 @@ router.post('/products', async (req, res) => {
     }
   });
 
-  // Crear una nueva orden
+// Crear una nueva orden
 router.post('/orders', async (req, res) => {
-  const { userId, products } = req.body;
+  const { userId, products, country, address, cellphone } = req.body;
   try {
     const user = await User.findById(userId);
     if (!user) {
@@ -49,6 +50,9 @@ router.post('/orders', async (req, res) => {
         product: item.productId,
         quantity: item.quantity
       })),
+      country,
+      address,
+      cellphone,
       totalAmount
     });
 
@@ -59,6 +63,7 @@ router.post('/orders', async (req, res) => {
   }
 });
 
+// Obtener todas las órdenes
 router.get('/orders', async (req, res) => {
     try {
       const orders = await Order.find().populate('user').populate('products.product');
@@ -68,4 +73,4 @@ router.get('/orders', async (req, res) => {
     }
   });
 
-module.exports= router;
+module.exports = router;

@@ -11,7 +11,7 @@ const port = 3001;
 
 // Configuración de CORS
 app.use(cors({
-    origin: 'https://proyect-next-eight.vercel.app/', 
+    origin: ['https://proyect-next-eight.vercel.app', 'http://localhost:3000'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'], 
     credentials: true, 
 }));
@@ -24,7 +24,7 @@ mongoose.connect(process.env.MONGODB_URI, {
     useUnifiedTopology: true,
 })
 .then(() => {
-    console.log('Connected to MongoDB');
+    console.log('Connected to MongoDB.');
 })
 .catch((err) => {
     console.error('Error connecting to MongoDB', err);
